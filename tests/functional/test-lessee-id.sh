@@ -110,3 +110,35 @@ openstack  --os-cloud test1 esi lease delete $uuid \
   || { ec=$?; echo "ERROR: failed to delete lease" >&2; exit $ec; }
 
 echo "LEASE DELETE TEST SUCCEEDED"
+
+##############################
+## OWNER POWER ON NODE TEST ##
+##############################
+
+# Tests that an owner can power on a node that they own
+
+echo "OWNER POWER ON NODE TEST"
+
+###############################
+## OWNER POWER OFF NODE TEST ##
+###############################
+
+# Tests that an owner can power off a node that they own
+
+echo "OWNER POWER OFF NODE TEST"
+
+###############################
+## LESSEE POWER ON NODE TEST ##
+###############################
+
+# Tests that a lessee can power on a node that they have access to
+
+echo "LESSEE POWER ON NODE TEST"
+
+################################
+## LESSEE POWER OFF NODE TEST ##
+################################
+
+# Tests that a lessee can power off a node that they have access to
+
+echo "LESSEE POWER OFF NODE TEST"
